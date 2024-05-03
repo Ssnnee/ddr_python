@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}DDR Project{% endblock %}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+      <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between"
+        <ul class="navbar-nav flex-grow-1">
+          <li class="nav-item" ><a href="/">Accueil</a></li>
+          <li class="nav-item"><a href="/actualite">Actualité</a></li>
+          <li class="nav-item"><a href="/parcours">Parcours</a></li>
+          <li class="nav-item"><a href="/projet">Projet</a></li>
+          <li class="nav-item"><a href="/contact">Contact</a></li>
+          <li class="nav-item"><a href="/galerie">Galerie</a></li>
+        </ul>
+      </div>
+      </nav>
+    </header>
+    <div class="container">{% block content %}{% endblock %} </div>
+  </body>
+</html>
+

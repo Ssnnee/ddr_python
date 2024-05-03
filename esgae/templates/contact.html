@@ -1,0 +1,33 @@
+{% extends 'base.html' %} {% block title %}Page d'actualité{% endblock %}
+{% block content %}
+
+<h2>Samuel Nandi</h2>
+<ul class="">
+    <li> <a href="https://github.com/Ssnnee"> Github </a> </li>
+    <li> <a href="https://www.linkedin.com/in/samuel-nandi/"> LinkedIn </a> </li>
+    <li> <a href="https://twitter.com/NandiSne"> Twitter </a> </li>
+</ul>
+<br />
+<br />
+<h2>Fredy ONIANGUE</h2>
+<ul class="">
+    <li> <a href="https://github.com/Cooger17"> Github </a> </li>
+</ul>
+<h2>Nous faire un don</h2>
+<span>
+    <span class="ml-2"> <img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_100x26.png" alt="PayPal Logo"> </span>
+    <select id="don" onchange="don()">
+        <option value="188888000">1000 FCFA</option>
+        <option value="2000">2000 FCFA</option>
+        <option value="3000">3000 FFCA</option>
+    </select>
+</span>
+<script>
+    function don() {
+        var x = document.getElementById("don").value;
+        alert("Vous faites un don de " + x + "FCFA");
+    }
+</script>
+
+
+{% endblock %}
